@@ -27,7 +27,7 @@
                     <td> <input type="submit" name="submit" value="submit"></td>
                 </tr>
                 <tr>
-                    <td><a href="{{ route('register') }}">Sign Up</a></td>
+                    <td><a href="{{ route('registration.home') }}">Sign Up</a></td>
                 </tr>
             </table>
         </fieldset>

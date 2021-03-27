@@ -23,13 +23,20 @@ Route::get('login', function () {
 */
     Route::get('/login','loginController@index')->name('login');
     Route::post('/login','loginController@verify');
+    Route::get('/registration/type', 'RegistrationController@home')->name('registration.home');
+
+
     Route::get('/registration','RegistrationController@index')->name('register');
-    Route::post('/registration','RegistrationController@register');
+    Route::post('/registration','RegistrationController@register')->name('register');
+
+
+    Route::get('/customer/registration','RegistrationController@customer_index')->name('customer.register');
+    Route::post('/customer/registration','RegistrationController@customer_register')->name('customer.register');
+
+
 
     Route::group(['middleware'=>('sess')], function(){
 
     Route::get('/home','HomeController@index')->name('home');
     });
-
-
     Route::get('/logout','LogoutController@index');
