@@ -48,9 +48,16 @@ Route::get('login', function () {
     Route::get('/home/storage/ssd','ComponentController@ssdList')->name('home.storage.ssd');
     Route::get('/home/storage/portable_storage','ComponentController@pdList')->name('home.storage.portable_storage');
 
+     Route::get('/home/customerlist','HomeController@customerlist')->name('home.customerlist');
+            Route::get('/home/delete/{id}','HomeController@destroy')->name('home.delete');
+
     });
 
-    
+    Route::group(['middleware'=>('admin')], function(){
+
+           
+
+          });
 
 
     Route::get('/logout','LogoutController@index');

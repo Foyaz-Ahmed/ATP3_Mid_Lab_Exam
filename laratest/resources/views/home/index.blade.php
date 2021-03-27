@@ -18,14 +18,14 @@
     		<td colspan="">
     			<h2>Componenets</h2>
                 <ul>
-
+                    <li><a href="{{ route('home.customerlist') }}">CustomerList</a></li>
 			        <li><a href="{{ route('home.ram') }}">Ram</a><br></li>
     			    <li><a href="{{ route('home.casing') }}">Casing|</a><br></li>
     			    <li><a href="{{ route('home.storage') }}">Storage</a></br>
 
                         <ul>
                             <li><a href="{{ route('home.storage.hard_disk') }}">Hard Disk</a></li>
-                            <li><a href="{{ route('home.storage.ssd') }} ">Drvie</a></li>
+                            <li><a href="{{ route('home.storage.ssd') }} ">SSD</a></li>
                             <li><a href="{{ route('home.storage.portable_storage') }}">Portable Storage</a></li>
                         </ul>
                     </li>
