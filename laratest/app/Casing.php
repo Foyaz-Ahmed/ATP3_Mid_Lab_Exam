@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Casing extends Model
 {
-    protected $table = "casing";
+   protected $table = "casing";
    public $timestamps = false;
    protected $primarykey = null;
 }

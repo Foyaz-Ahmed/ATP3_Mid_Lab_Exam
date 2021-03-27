@@ -11,7 +11,7 @@
         <th>Manufacturer Review</th>
         <th>Price</th>
     </tr>
-    @foreach($casing as  $value)
+    @foreach($casing as $value)
     <tr align="center">
         <td>{{ $value['name'] }}</td>
         <td>{{ $value['manufacturer_review'] }}</td>

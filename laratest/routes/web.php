@@ -39,6 +39,7 @@ Route::get('login', function () {
 
     Route::get('/home','HomeController@index')->name('home');
     Route::get('/home/casing','ComponentController@casingList')->name('home.casing');
+    Route::get('/home/ram','ComponentController@ramList')->name('home.ram');
     });
 
     
