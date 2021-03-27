@@ -17,12 +17,22 @@
     	<tr height="400px">
     		<td colspan="">
     			<h2>Componenets</h2>
-			    <a href="{{ route('home.ram') }}">Ram</a><br>
-			    <a href="{{ route('home.casing') }}">Casing|</a><br>
-			    <a href="{{ route('home.storage') }}">Storage</a></br>
-                <a href="{{ route('home.graphics_card') }}">Graphics Card</a></br>
-                <a href="{{ route('home.monitors') }}">Monitors</a></br>
-                <a href="/logout">Logout</a></br>
+                <ul>
+
+			        <li><a href="{{ route('home.ram') }}">Ram</a><br></li>
+    			    <li><a href="{{ route('home.casing') }}">Casing|</a><br></li>
+    			    <li><a href="{{ route('home.storage') }}">Storage</a></br>
+
+                        <ul>
+                            <li><a href="{{ route('home.storage.hard_disk') }}">Hard Disk</a></li>
+                            <li><a href="{{ route('home.storage.ssd') }} ">Drvie</a></li>
+                            <li><a href="{{ route('home.storage.portable_storage') }}">Portable Storage</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="{{ route('home.graphics_card') }}">Graphics Card</a></br></li>
+                    <li><a href="{{ route('home.monitors') }}">Monitors</a></br></li>
+                    </ul>
+                    <a href="/logout">Logout</a></br>
     		</td>
     		<td width="600px"></td>
     	</tr>

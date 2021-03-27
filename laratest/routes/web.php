@@ -42,7 +42,12 @@ Route::get('login', function () {
     Route::get('/home/ram','ComponentController@ramList')->name('home.ram');
     Route::get('/home/graphicscard','ComponentController@graphics_cardList')->name('home.graphics_card');
     Route::get('/home/storage','ComponentController@storageList')->name('home.storage');
-     Route::get('/home/monitors','ComponentController@monitorList')->name('home.monitors');
+    Route::get('/home/monitors','ComponentController@monitorList')->name('home.monitors');
+
+    Route::get('/home/storage/hard_disk','ComponentController@hard_diskList')->name('home.storage.hard_disk');
+    Route::get('/home/storage/ssd','ComponentController@ssdList')->name('home.storage.ssd');
+    Route::get('/home/storage/portable_storage','ComponentController@pdList')->name('home.storage.portable_storage');
+
     });
 
     

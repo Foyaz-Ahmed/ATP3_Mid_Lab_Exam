@@ -8,6 +8,10 @@ use App\Ram;
 use App\Graphics_Card;
 use App\Storage;
 use App\Monitors;
+use App\Hard_Disk;
+use App\Portable_Storage;
+use App\SSD;
+
 
 class ComponentController extends Controller
 {
@@ -49,5 +53,29 @@ class ComponentController extends Controller
     	$monitors = Monitors::all();
    
        return  view('component.monitor')->with('monitors',$monitors);
+    }
+
+    public function hard_diskList()
+
+    { 
+    	$hd = Hard_Disk::all();
+    	return  view('component.hard_disk')->with('hd',$hd);
+
+    }
+
+    public function ssdList()
+
+    { 
+    	$ssd = SSD::all();
+    	return  view('component.ssd')->with('ssd',$ssd);
+
+    }
+
+    public function pdList()
+
+    { 
+    	$pd = Portable_Storage::all();
+    	return  view('component.portable_storage')->with('pd',$pd);
+
     }
 }
