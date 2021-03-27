@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    
     <table border=1 cellspacing="0"  cellpadding="0">
     	<tr>
     		<td colspan="2">
@@ -15,11 +16,12 @@
     	</tr>
     	<tr height="400px">
     		<td colspan="">
-    			<h2>Accounts</h2>
+    			<h2>Componenets</h2>
 			    <a href="/home/ram">Ram</a><br>
-			    <a href="/home/casing">Casing|</a><br>
+			    <a href="{{ route('home.casing') }}">Casing|</a><br>
 			    <a href="/home/monitor">Monitor</a></br>
                 <a href="/home/graphics">Graphics Card</a></br>
+                <a href="/home/monitors">Monitors</a></br>
                 <a href="/logout">Logout</a></br>
     		</td>
     		<td width="600px"></td>

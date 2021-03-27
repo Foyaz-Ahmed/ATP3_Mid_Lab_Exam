@@ -38,5 +38,12 @@ Route::get('login', function () {
     Route::group(['middleware'=>('sess')], function(){
 
     Route::get('/home','HomeController@index')->name('home');
+    Route::get('/home/casing','ComponentController@casingList')->name('home.casing');
     });
+
+    
+
+
     Route::get('/logout','LogoutController@index');
+
+
