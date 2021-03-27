@@ -50,6 +50,12 @@ Route::get('login', function () {
 
      Route::get('/home/customerlist','HomeController@customerlist')->name('home.customerlist');
             Route::get('/home/delete/{id}','HomeController@destroy')->name('home.delete');
+    
+     Route::get('/home/ram/review/{id}','ComponentController@review')->name('home.ram.review');
+    Route::get('/home/casing/review/{id}','ComponentController@casing_review')->name('home.casing.review');
+    Route::get('/home/graphics_card/review/{id}','ComponentController@graphics_card_review')->name('home.graphics_card.review');
+    Route::get('/home/monitors/{id}','ComponentController@monitors_review')->name('home.monitors.review');
+    Route::get('/home/storage/{id}','ComponentController@storage_review')->name('home.storage.review');
 
     });
 

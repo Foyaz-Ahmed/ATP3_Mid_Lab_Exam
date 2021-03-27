@@ -26,7 +26,7 @@
         <td>{{ $value['Gender'] }}</td>
         <td>{{ $value['Type'] }}</td>
         <td>{{ $value['Status'] }}</td>
-        <td>{{ $value['Phone_No'] }}</td>
+        <td>{{ $value['PhoneNo'] }}</td>
         <td>{{ $value['Salary'] }}</td>
         <td>{{ $value['DOB'] }}</td>
         <td>

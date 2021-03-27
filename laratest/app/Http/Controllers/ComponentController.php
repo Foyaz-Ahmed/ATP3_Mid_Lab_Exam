@@ -78,4 +78,38 @@ class ComponentController extends Controller
     	return  view('component.portable_storage')->with('pd',$pd);
 
     }
+
+    public function review($id)
+
+    { 
+       
+        return  view('component.review');
+    }
+
+     public function casing_review($id)
+
+    { 
+       
+        return  view('component.review');
+    }
+    public function monitors_review($id)
+
+    { 
+       
+        return  view('component.review');
+    }
+
+    public function storage_review($id)
+
+    { 
+       
+        return  view('component.review');
+    }
+
+    public function graphics_card_review($id)
+
+    { 
+       
+        return  view('component.review');
+    }
 }

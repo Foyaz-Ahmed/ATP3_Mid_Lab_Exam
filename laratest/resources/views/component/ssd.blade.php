@@ -13,6 +13,7 @@
         <th>Manufacturer Review</th>
         <th>Price</th>
         <th>Brand</th>
+        <th>Add cart</th>
     </tr>
     @foreach($ssd as  $value)
     <tr align="center">
@@ -20,7 +21,9 @@
         <td>{{ $value['manufacturer_review'] }}</td>
         <td>{{ $value['price'] }}</td>
         <td>{{ $value['brand'] }}</td>
-
+        <td>
+            <button><a href="#">Add</a></button>
+        </td>
     </tr>
     <tr>
 	@endforeach  
