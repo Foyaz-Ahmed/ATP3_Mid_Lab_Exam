@@ -19,9 +19,9 @@
     			<h2>Componenets</h2>
 			    <a href="{{ route('home.ram') }}">Ram</a><br>
 			    <a href="{{ route('home.casing') }}">Casing|</a><br>
-			    <a href="/home/monitor">Monitor</a></br>
-                <a href="/home/graphics">Graphics Card</a></br>
-                <a href="/home/monitors">Monitors</a></br>
+			    <a href="{{ route('home.storage') }}">Storage</a></br>
+                <a href="{{ route('home.graphics_card') }}">Graphics Card</a></br>
+                <a href="{{ route('home.monitors') }}">Monitors</a></br>
                 <a href="/logout">Logout</a></br>
     		</td>
     		<td width="600px"></td>

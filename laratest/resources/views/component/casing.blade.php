@@ -4,6 +4,7 @@
 	<title>Casing Product</title>
 </head>
 <body>
+	<h2>Different type of Casing</h2>
 	<a href="/home">back</a>
 	<table border=1 cellspacing="0" >
     <tr align="center">

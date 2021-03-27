@@ -40,6 +40,9 @@ Route::get('login', function () {
     Route::get('/home','HomeController@index')->name('home');
     Route::get('/home/casing','ComponentController@casingList')->name('home.casing');
     Route::get('/home/ram','ComponentController@ramList')->name('home.ram');
+    Route::get('/home/graphicscard','ComponentController@graphics_cardList')->name('home.graphics_card');
+    Route::get('/home/storage','ComponentController@storageList')->name('home.storage');
+     Route::get('/home/monitors','ComponentController@monitorList')->name('home.monitors');
     });
 
     
